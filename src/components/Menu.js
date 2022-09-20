@@ -39,6 +39,9 @@ function Menu(props) {
         <li>
           <Link to="/ClickCounter">ClickCounter</Link>
         </li>
+        <li>
+          <Link to="/youtube">youtube</Link>
+        </li>
       </ul>
     </nav>
   );
