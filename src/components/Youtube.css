@@ -1,3 +1,31 @@
-.yt_main {
-  background-color: rebeccapurple;
+.yt__phone_top {
+  display: flex;
+  justify-content: space-between;
+  background-color: gray;
+}
+
+.yt__phone_top > div:last-child {
+  display: flex;
+}
+.phone_top_LTE {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.yt__topbar {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+.yt__topbar > div:first-child {
+  font-size: 25px;
+  display: flex;
+  line-height: 20px;
+  margin-left: 10px;
+}
+.yt__topbar_right {
+  display: flex;
+  justify-content: space-between;
+}
+.yt__topbar_right > span {
+  margin-right: 5px;
 }
