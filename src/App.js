@@ -6,7 +6,7 @@ import "./App.css";
 import Movies from "./components/Movies";
 import Menu from "./components/Menu";
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import Youtube from "./components/Youtube";
 function Home() {
   return <h2>홈 컴포넌트</h2>;
@@ -17,7 +17,7 @@ function About() {
 function App(props) {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Menu />
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -34,7 +34,7 @@ function App(props) {
           <Route path="/ClickCounter" element={<ClickCounter />}></Route>
           <Route path="/youtube" element={<Youtube />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
