@@ -5,11 +5,15 @@ import Movie from "./components/Movie";
 import "./App.css";
 import Movies from "./components/Movies";
 import Menu from "./components/Menu";
-
+import Tailwind from "./components/Tailwind";
 import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import Youtube from "./components/Youtube";
 function Home() {
-  return <h2>홈 컴포넌트</h2>;
+  return (
+    <>
+      <h2>홈 컴포넌트1</h2>
+    </>
+  );
 }
 function About() {
   return <h2>개발자 소개</h2>;
@@ -21,6 +25,7 @@ function App(props) {
         <Menu />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+
           <Route path="/popular" element={<Movies apiPath="popular" />}></Route>
           <Route
             path="/upcoming"
@@ -33,6 +38,7 @@ function App(props) {
           <Route path="/About" element={<About />}></Route>
           <Route path="/ClickCounter" element={<ClickCounter />}></Route>
           <Route path="/youtube" element={<Youtube />}></Route>
+          <Route path="/tailwind" element={<Tailwind />}></Route>
         </Routes>
       </HashRouter>
     </>

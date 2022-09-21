@@ -42,6 +42,9 @@ function Menu(props) {
         <li>
           <Link to="/youtube">youtube</Link>
         </li>
+        <li>
+          <Link to="/tailwind">tailwind</Link>
+        </li>
       </ul>
     </nav>
   );
