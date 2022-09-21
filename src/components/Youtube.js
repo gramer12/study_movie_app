@@ -234,7 +234,9 @@ function Youtube() {
       {/* 바텀내비게이션 */}
       <div bottom_navi>
         <div>
-          <span></span>
+          <span>
+            <img src></img>
+          </span>
         </div>
         <div>
           <span></span>
