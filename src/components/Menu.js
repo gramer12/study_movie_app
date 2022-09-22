@@ -1,6 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css";
 function Menu(props) {
+  const [darkMode, setDarkMode] = useState(false);
+  function toggle() {
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      console.log("on");
+      document.querySelector("body").classList.add("dark");
+    } else {
+      console.log("off");
+      document.querySelector("body").classList.remove("dark");
+    }
+  }
   return (
     <nav>
       <ul>
@@ -44,6 +56,17 @@ function Menu(props) {
         </li>
         <li>
           <Link to="/tailwind">tailwind</Link>
+        </li>
+        <li>
+          <div>
+            <input
+              id="toggle_dark"
+              type={"checkbox"}
+              checked={darkMode}
+              onChange={toggle}
+            ></input>
+            <label htmlFor="toggle_dark">다크모드</label>
+          </div>
         </li>
       </ul>
     </nav>

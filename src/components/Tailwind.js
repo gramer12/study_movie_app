@@ -1,7 +1,7 @@
 function Tailwind() {
   return (
     <>
-      <div className="bg-white relative">
+      <div className="bg-white relative text-black dark:bg-black dark:text-white">
         {/* 1층 */}
         <div className="flex justify-between pt-5">
           <div className="ml-6 font-bold text-3xl">더보기</div>
@@ -442,7 +442,7 @@ function Tailwind() {
           ></img>
         </div>
 
-        <div className="absolute bottom-0 w-[100%] py-5 bg-gray-100 flex justify-around ">
+        <div className="absolute bottom-0 w-[100%] py-5 bg-gray-100 flex justify-around dark:bg-gray-800">
           <span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -475,7 +475,7 @@ function Tailwind() {
               />
             </svg>
           </span>
-          <span className="text-5xl relative bottom-1 hover:bg-gray-200">
+          <span className="text-5xl relative bottom-1 hover:bg-gray-200 ">
             #
           </span>
           <span>
